@@ -22,7 +22,7 @@ namespace KSH.Okta.ApiClient.TokenAuth
                 //GetUserTest("00uf5t2yvgq58KuN80h7"); // testguy mccloud
 
                 //======== update a first name ======== 
-                UpdateUserProfileTest("kyle.hammond@email.com");
+                UpdateUserProfileTest("#.#@email.com");
 
                 Console.ReadLine();
             }
@@ -39,7 +39,7 @@ namespace KSH.Okta.ApiClient.TokenAuth
         private static void UpdateUserProfileTest(string email)
         {
             var user = new OktaClient().GetUserAsync(email).GetAwaiter().GetResult();
-            user.Profile.FirstName = "Kyle";
+            user.Profile.FirstName = "FirstName";
             Console.WriteLine("Attempting to update with email '" + email + "'...");
             var updatedUser = new OktaClient().UpdateUserProfileAsync(user).GetAwaiter().GetResult();
             WriteUser(updatedUser);
