@@ -16,10 +16,10 @@ namespace KSH.Okta.ApiClient.TokenAuth
 
                 //// ======== get by id/login ======== 
                 //Console.WriteLine("Getting user...");
-                //GetUserTest("kyle.hammond"); // kyle
-                //GetUserTest("00uf3g4k1rU7UNMLO0h7"); // kyle
+                //GetUserTest("#.#"); // name
+                //GetUserTest("#"); // name with id
                 //GetUserTest("testguy.mccloud"); // testguy mccloud
-                //GetUserTest("00uf5t2yvgq58KuN80h7"); // testguy mccloud
+                //GetUserTest("#"); // testguy mccloud with id
 
                 //======== update a first name ======== 
                 UpdateUserProfileTest("#.#@email.com");
